@@ -1,0 +1,26 @@
+Neste desafio, foi proposto a prática do processo de criação e configuração de uma máquina virtual na plataforma Microsoft Azure.
+
+Durante meu lab, realizar a criação de alguns recursos:
+
+Resource Group: vm-lab-dio, dentro da minha subscription "Azure subscription 1" com localização no East-US
+
+A minha máquina virtual foi a seguinte:
+
+Nome:
+Region:
+Availability options com Availability Zone e Zonas do tipo Self-selected (Limitação da região East-US)
+
+Sendo as zonas 1 e 2 do East US para Availability Zone
+
+Security type: Standard
+
+Image: Ubuntu Server 24.04 LTS (Para rodar alguns recursos como Grafana e Zabbix, como teste)
+
+Autenticação do tipo Password, com Inbound ports para a porta SSH (22)
+
+VM Architecture: x64 com Size do tipo Standard no padrão D2ads_v6 com 2vCPU e 8 GB de Memória e discos Premium SSD (locally-redundant) de 30GB
+
+Criado também uma vnet no padrão de subnet 10.2.0.0/24 com Azure Load Balancer e um IP Publico.
+
+Habilitado o Defender for Cloud (Basic Plan de graça) e Auto-shutdown a partir das 22h00 e alertas para meu e-mail pessoal.
+
