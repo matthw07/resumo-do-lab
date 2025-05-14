@@ -1,0 +1,15 @@
+Neste laboratório, o desafio proposto foi o de praticar o processo de configuração de uma instância de Banco de Dados na plataforma Microsoft Azure.
+
+Utilizando a minha subscription "Azure subscription 1" realizar a criação de um banco de dados SQL
+
+Com um database de nome database-aula, criei um server chamado "database-aula" com localização no East-US.
+
+Optei por não usar um elastic pool no SQL e selecionei a opção de workload environment de desenvolvimento.
+
+Um Serverless de General Purpose, série Standard (geração 5) com 1vCore e 32gb de armazenamento, backup redundante baseado em zone-redundant.
+
+O custo estimado por mês de armazenamento foi de 3,68 USD e o custo de compute foi de 0.000145 USD per second.
+
+Conectividade com um Public Endpoint, e algumas regras de Firewall, permitindo o acesso apenas ao meu IP publico e versão mínima do TLS: 1.2
+
+As demais configurações seguiram o padrão.
